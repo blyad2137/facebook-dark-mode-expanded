@@ -1,0 +1,377 @@
+/* ==UserStyle==
+@name           Facebook - Dark Mode Expanded
+@namespace      github.com/blyad2137/facebook-dark-mode-expanded
+@version        1.0.0
+@description    `Expanded Dark Mode covers everything that still remains white and corrects some present issues on the site.`
+@author         blyad (https://github.com/blyad2137)
+@license	CC BY-NC-SA 4.0
+@homepageURL    https://github.com/blyad2137/facebook-dark-mode-expanded
+@supportURL     https://github.com/blyad2137/facebook-dark-mode-expanded/issues
+@updateURL      https://userstyles.world/api/style/3903.user.css
+@preprocessor	uso
+
+@advanced dropdown disable-recommended "Recommended Stuff(on the right panel):" {
+	1. "HIDE" <<<EOT .rq0escxv.du4w35lb.o387gat7.qbu88020.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.ni8dbmo4.stjgntxs.lpgh02oy.be9z9djy.hlyrhctz .l9j0dhe7.du4w35lb.rq0escxv.j83agx80.cbu4d94t.pfnyh3mw.d2edcug0.discj3wi {display: none !important;} EOT;
+	2. "SHOW" <<<EOT EOT;
+}
+@advanced dropdown side-panels "Position of side panels:" {
+	1. "To the edge" <<<EOT .rq0escxv.du4w35lb.o387gat7.qbu88020.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.ni8dbmo4.stjgntxs.lpgh02oy.be9z9djy.hlyrhctz {
+		position: fixed;
+		right: 0;
+		margin-right: 1em;
+	}
+	.rq0escxv.du4w35lb.o387gat7.qbu88020.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.ni8dbmo4.stjgntxs.rek2kq2y.lpgh02oy.be9z9djy.bx45vsiw {
+		position: fixed;
+		left: 0;
+		margin-left: 1em;
+	}EOT;
+	2. "To the center(OG)" <<<EOT EOT;
+}
+==/UserStyle== */
+
+@-moz-document domain("facebook.com") {
+	:root {
+		--bg-1: #18191a;
+		--bg-1-rgb: 24, 25, 26;
+		--bg-2: #242526;
+		--bg-2-rgb: 36, 37, 38;
+		--bg-3: #3a3b3c;
+		--bg-3-rgb: 58, 59, 60;
+		--primary-text: #e4e6eb;
+		--pt: var(--primary-text);
+		--secondary-text: #b0b3b8;
+		--st: var(--secondary-text);
+		--border: #3e4042;
+		--accent: hsl(214, 100%, 59%);
+		--accent-rgb: 46, 137, 255;
+	}
+	
+	body.UIPage_LoggedOut, body._605a {
+		background-color: var(--bg-1);
+		color: var(--primary-text);
+	}
+	#contentCurve, ._8icy ._8icz, ._5tkp, ._1hcb {
+		border-color: var(--border);
+	}
+	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext {
+		background-color: var(--bg-1);
+	}
+	#facebook ._8esf ._8e63, #facebook ._8esf ._58mk, ._c24, #facebook ._8esf ._52lp ._52lq, input, select, textarea, #facebook ._8esf ._5k_4 ._8esg, #facebook ._8esf ._5k_2 ._58mt, #facebook ._8it_ ._1v_x h2.uiHeaderTitle, .rs22bh7c, ._4-i0 ._52c9, ._15lg, #facebook ._8esj._8esf ._8eso, #facebook ._9kpl ._9kpo, .fcb, .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabels, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, ._42fu, .CometSettingsPage ._50f4, .CometSettingsPage ._39gj, .CometSettingsPage ._3o7u, ._50f7, ._3ksl, ._3ks9, ._3ksw, ._42al, ._tph ._tpl, .CometSettingsPage #contentCol .fsm, .CometSettingsPage #contentCol .fbSettingsEditorFields a[role='button'], .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape, ._55pe, ._19s-, ._2fvv, ._2x1i, ._2x1j, ._2x1p, h5._34h5, ._1clg .inputtext:focus, ._1clg .inputtext:active, ._1yhk, h3._34h5, ._59cz ._59c_ h4, ._52id, ._3x93 .uiList li, ._575j a:hover {
+		color: var(--primary-text);
+	}
+	.fzdkajry {
+		fill: var(--primary-text);
+	}
+	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz {
+		color: var(--secondary-text);
+	}
+	._1gbd {
+		box-shadow: 0 0 0 1px var(--border);
+	}
+	._1gaz {
+		background-color: var(--bg-2);
+		width: auto !important;
+	}
+	._1gbd:hover {
+		box-shadow: 0 1px 8px 5px var(--border);
+	}
+	._6luv, ._csi:hover ._t7b, .cwj9ozl2 {
+		background-color: var(--bg-2);
+	}
+	html ._55r1 {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+		color: var(--primary-text);
+	}
+	._517h, ._59pe:focus, ._59pe:hover {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+		color: var(--secondary-text);
+	}
+	.sp_gMujFo71RwJ.sx_25f620, [src*="/__geKiQnSG-.png"], .sp_98fCI7IVTTz.sx_c4643a,  [src*="/Family-Lockup-Inline_10_light.png"], .sp_-Ww9-2lZPiS.sx_3813d1, .sp_d_7d9pz5g6w, ._8bb_ img.monochrome, ._8bb_ i.monochrome, .sp_8s3dp67SKVi.sx_9e9cb0:not(.selected .sp_8s3dp67SKVi.sx_9e9cb0) {
+		filter: invert(1) hue-rotate(180deg);
+	}
+._9ls8, ._9ls9, .lzf7d6o1, [src*="/leave-door_filled_24_fds-black.png"], [src*="/language_filled_24_fds-black.png"], [src*="/settings_outline_24_fds-gray-40.png"], [src*="/shopping-bag_outline_24_fds-gray-40.png"], [src*="/shield_outline_24_fds-gray-40.png"],  .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(3) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6, .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(5) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6, [src*="/r/IqRReGL9Pcc.png"], [src*="/r/4-HVPI8rmSn.png"], [src*="/r/K4ydGT2S5Bv.png"], [src*="/r/1EMLaPDMxuu.png"]  {
+		filter: invert(1);
+	}
+	._9lsa:hover, .rnr61an3 {
+		background-color: rgba(255, 255, 255, .05);
+	}
+	._8fgk._8idq ._3ixn, ._8n26._8n26 ._3ixn {
+		background-color: rgba(var(--bg-1-rgb),.8);
+	}
+	._8fgk ._8ien ._52lp, ._9bpz ._8ien ._52lp, ._58mf .uiStickyPlaceholderInput, ._4t2a, ._59s7, div._4-i2, div._5a8u, .cddn0xzi, .uiBoxWhite, ._9l2i ._9l1d ._9l16, ._9l2i ._9l16, .hybvsw6c, ._9ai5, ._4-u8, ._39il ._82go, .q2y6ezfg, .fbSettingsList a.fbSettingsListLink:hover, ._57d8, ._2z5s:hover, ._599r, .mzpmh2ah:hover, ._4h7j, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2, ._8fgk ._52lp, ._9bpz ._52lp, ._97vz ._1w1t, ._2ypw._3hyz ._2ypv, ._5tkn {
+		background-color: var(--bg-2);
+	}
+	._8fgk ._8fgl, ._9bpz ._8fgl {
+		background-color: var(--bg-2);
+		border-top-color: var(--border);
+	}
+	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e) {
+		background-color: var(--bg-3);
+	}
+	.qhmrp3oz {
+		border-color: var(--bg-2);
+	}
+	._8esf ._58mg, #facebook ._8esf ._5k_4 ._8esg, ._5lnf, ._8it_ .uiInterstitial .interstitialHeader, .linmgsc8, .qbxu24ho, .l6v480f0, ._4-u2, ._4ks>li, .fbSettingsListBorderTop, .uiBoxGray, ._4-u2>._4-u3, ._a7w, ._39gk, ._3kso, ._tpp, .uiBoxWhite, .fbSettingsSections .fbSettingsSectionsItem.fbSettingsSectionsItemBorderTop, .d6zdudih, .fbSettingsSections, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2::before, ._2x1p, ._2g0n, ._b_1 {
+		border-color: var(--border);
+	}
+	._8esf ._5k_2 {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+	}
+	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a {
+		color: var(--accent);
+	}
+	#facebook ._8esf ._7-16 {
+		color: var(--primary-text);
+		background-color: var(--bg-3);
+		border-color: var(--border);
+	}
+	._4-i0 {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+		color: var(--primary-text);
+	}
+	._58mn, .uiBoxRed {
+		background-color: #4f3333;
+	}
+	._8it_ ._8iu2 {
+		box-shadow: 0 0 4px rgba(255, 255, 255, .1), 0 0 1px rgba(255, 255, 255, .1);
+	}
+	._8n2n {
+		background-color: var(--bg-3);
+		color: var(--primary-text);
+	}
+	._8n2n ._8n1_ {
+		color: var(--primary-text);
+		border-color: var(--border);
+	}
+	._8it_ ._8iu3 {
+		background-color: var(--bg-3);
+		color: var(--primary-text);
+	}
+	.nwpbqux9:not(.cwj9ozl2) {
+		box-shadow: 0 12px 28px 0 var(--shadow-2),0 2px 4px 0 var(--shadow-1),inset 0 0 0 1px var(--border);
+	}
+	.oo9gr5id, .a57itxjd {
+		color: var(--pt);
+	}
+	.m9osqain, ._3h8t, ._575j::before, ._575j a, body.UIPage_LoggedOut #pageFooter a {
+		color: var(--st);
+	}
+	.em6zcovv {
+		fill: var(--st);
+	}
+	form.async_saving ._517h, a.async_saving._517h, ._517h._42fr {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+	}
+	.pwoa4pd7, tr._3sto hr, ._9kq3 hr, hr._2euw {
+		background-color: var(--border);
+	}
+	._9kq3 {
+		margin: 0 !important;
+		width: auto !important;
+	}
+	._9ax- ._1rf5>span:before, ._9ax- ._1rf5>span:after {
+		background-color: var(--border);
+	}
+	.ms7hmo2b {
+		background-color: rgba(var(--bg-3-rgb),.8);
+		backdrop-filter: blur(.15rem);
+		-webkit-backdrop-filter: blur(.15rem);
+	}
+	iframe.k4urcfbm.jgljxmt5.a8c37x1j.izx4hr6d.humdl8nn.bn081pho.gcieejh5.esnais5j, .sp_VyMNjLCM2Rl.sx_4f32a1, ._51mz ._51m- i, .sp_TGZe7QQOGt9.sx_4ed8f4, ._8bb_ ._558b ._54ne ._54nc, ._8bb_ .uiButtonConfirm, ._8bb_ ._4jy1, ._8bb_ .openToggler>._5vto, ._8bb_ .img {
+		filter: none;
+	}
+	._8bb_.CometSettingsPage.CometSettingsPageHosted, ._8bb_ {
+		background-color: var(--bg-1) !important;
+	}
+	._3qku {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+		color: var(--primary-text);
+		position: relative;
+	}
+	._3qku * {
+		z-index: 1;
+		position: relative;
+	}
+	._3qku::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(var(--accent-rgb),.15);
+		z-index: 0;
+	}
+	._42fu:not(._42g-), ._42gx:focus:not(._42g-), ._42gx:hover:not(._42g-) {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+	}
+	.CometSettingsPage #contentCol .fbSettingsEditor .inputtext, .CometSettingsPage #contentCol .fbSettingsEditor .inputpassword {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+		color: var(--pt);
+	}
+	.CometSettingsPage #contentCol .fbSettingsEditor .inputtext::placeholder {
+		color: var(--st);
+		opacity: .75;
+	}
+	._k7g {
+		background-color: var(--bg-2);
+		color: var(--pt);
+	}
+	._4-u8 {
+		background-color: var(--bg-1);
+	}
+	._53il ._558b+._53io, .ie10 ._55sh>input:checked+span:before, .webkit ._55sh>input:checked+span:before, .ie10 ._55sh>input+span:before, .webkit ._55sh>input+span:before, .ie10 ._55sg>input+span:before, .webkit ._55sg>input+span:before {
+		filter: invert(.85);
+	}
+	._558b ._54ng {
+		background-color: var(--bg-2);
+		border-color: rgba(255,255,255,.15);
+	}
+	._558b ._54nc {
+		border-color: var(--bg-2);
+		color: var(--pt);
+	}
+	._3ksm, ._3ksn {
+		color: var(--st);
+		opacity: .7;
+	}
+	._3ks5 {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+	}
+	form.async_saving .uiButton.uiButtonConfirm, .uiButtonConfirm.uiButtonDisabled, .uiButtonConfirm.uiButtonDisabled:active, .uiButtonConfirm.uiButtonDisabled:focus, .uiButtonConfirm.uiButtonDisabled:hover {
+		background-color: #445875;
+		border-color: #445875;
+	}
+	.uiButtonConfirm.uiButtonDisabled .uiButtonText, .uiButtonConfirm.uiButtonDisabled input {
+		color: #181818;
+	}
+	._59_m, .CometSettingsPage #contentCol textarea, ._1pif, ._2yau:active::after, ._2x1p._2x1p:hover {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+	}
+	._59_o {
+		background-color: var(--bg-3);
+		border-color: var(--border);
+		color: var(--pt);
+		position: relative;
+	}
+	._59_o span:nth-of-type(1) {
+		z-index: 1;
+		position: relative;
+	}
+	._59_o::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(var(--accent-rgb),.22);
+		z-index: 0;
+	}
+	._50zz._50z- {
+		filter: brightness(3);
+	}
+	._2e49, .l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.q2y6ezfg.__fb-light-mode.tv7at329 {
+		background-color: var(--bg-3);
+	}
+	._1pih {
+		background-color: var(--bg-2);
+		border-color: var(--border);
+	}
+	span._4chl div._392n:not(a:hover span div), .sp_C0FOiQ3B4nS.sx_59098c:not(._8bb_ .openToggler>._5vto span i), .sp_gMujFo71RwJ.sx_67944a:not(.openToggler>._5vto span i), i.img.sp_pG83WoSi7l2.sx_5d02a6, .oajrlxb2.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.btwxx1t3.abiwlrkh.p8dawk7l.lzcic4wl.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.gu00c43d.ljni7pan.bp9cbjyn.j83agx80.taijpn5t.b3i9ofy5 i {
+		filter: invert(1) hue-rotate(180deg);
+	}
+    .oajrlxb2.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.btwxx1t3.abiwlrkh.p8dawk7l.lzcic4wl.j83agx80.bp9cbjyn.taijpn5t.b73ngqbp.rgmg9uty.q2y6ezfg.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv {
+        fill: var(--pt);
+    }
+    .fv0vnmcu.ggphbty4.oeo4gz9l.chsygg5i.q2y6ezfg.pdihbav5.fo8ltl2p.b8f6b1oh.q0b78ich.j83agx80.taijpn5t.bp9cbjyn.e9vueds3.lrazzd5p.nhd2j8a9.abiwlrkh.l9j0dhe7 {
+        color: var(--pt) !important;
+    }
+	[src="https://scontent.fktw5-1.fna.fbcdn.net/v/t39.2365-6/14809644_1074364346016221_8640821729595228160_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=hH0tcOUCbmAAX_WY6JP&_nc_oc=AQkj1MCjW4h-kBB2JjiF0UW2xljEbUiN8xxT00yWAtFs_FBGRfCbB2vP2IgX3YXFGbo&_nc_ht=scontent.fktw5-1.fna&oh=00_AT-tALbtRLNGoOCFOhX4GTtGb1qnusemIIkTvAT1BVbzMA&oe=6226F157"], [src="https://scontent.fktw5-1.fna.fbcdn.net/v/t39.2365-6/14753627_183158605424408_1292751036875800576_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=zic53iZezwMAX_cteAH&tn=3vNRX5QiJBMiHdYe&_nc_ht=scontent.fktw5-1.fna&oh=00_AT9Cib_QyBEe__0Fd7thapEEHwJ_ilzNQBYIv2JL7mGk9g&oe=6225B40A"] {
+		display: none !important;
+	}
+	._4mkt {
+		border-color: var(--accent);
+		color: var(--accent);
+	}
+	._4mkt:focus, ._4mkt:hover, button._42ft._4mkt.button._4mku._84x0._1siz:hover {
+		background-color: var(--accent);
+	}
+	.sp_oMJ-H3SCWg6.sx_99361e {
+		filter: brightness(1.2);
+		transition: all 300ms ease;
+	}
+	button._42ft._4mkt.button._4mku._84x0._1siz {
+		border-color: transparent;
+	}
+	button._42ft._4mkt.button._4mku._84x0._1siz:hover .sp_oMJ-H3SCWg6.sx_99361e {
+		filter: brightness(2);
+	}
+	._575h, ._3h8s {
+		background-color: var(--bg-3);
+		border-color: var(--bg-2);
+	}
+	._3h8s:hover, ._575j:hover {
+		background-color: var(--bg-3);
+		filter: brightness(1.2);
+	}
+	._1hcc {
+		background-color: var(--bg-3);
+		color: var(--pt);
+	}
+	.rq0escxv.du4w35lb.rek2kq2y.lpgh02oy {
+		top: 55px !important;
+	}
+	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw {
+		position: relative;
+		border-radius: 50%;
+		width: 1rem;
+		height: 1rem;
+		border: 2px solid var(--primary-icon);
+		margin: 0;
+		padding: 0;
+	}
+	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.iv6tldhd {
+		position: relative;
+		border-radius: 50%;
+		width: 1rem;
+		height: 1rem;
+		border: 2px solid var(--accent);
+		margin: 0;
+		padding: 0;
+	}
+	.tkxwya3v, .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		margin: auto;
+		padding: 0;
+		border-radius: 50%;
+		width: .7rem;
+		height: .7rem;
+	}
+	
+	
+	/*[[side-panels]]*/
+	/*[[disable-recommended]]*/
+}
