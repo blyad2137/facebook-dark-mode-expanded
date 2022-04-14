@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Facebook - Dark Mode Expanded
 @namespace      github.com/blyad2137/facebook-dark-mode-expanded
-@version        1.0.0
+@version        1.0.1
 @description    `Expanded Dark Mode covers everything that still remains white and corrects some present issues on the site.`
 @author         blyad (https://github.com/blyad2137)
 @license	CC BY-NC-SA 4.0
@@ -53,16 +53,16 @@
 	#contentCurve, ._8icy ._8icz, ._5tkp, ._1hcb {
 		border-color: var(--border);
 	}
-	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext {
+	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext, ._585r {
 		background-color: var(--bg-1);
 	}
-	#facebook ._8esf ._8e63, #facebook ._8esf ._58mk, ._c24, #facebook ._8esf ._52lp ._52lq, input, select, textarea, #facebook ._8esf ._5k_4 ._8esg, #facebook ._8esf ._5k_2 ._58mt, #facebook ._8it_ ._1v_x h2.uiHeaderTitle, .rs22bh7c, ._4-i0 ._52c9, ._15lg, #facebook ._8esj._8esf ._8eso, #facebook ._9kpl ._9kpo, .fcb, .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabels, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, ._42fu, .CometSettingsPage ._50f4, .CometSettingsPage ._39gj, .CometSettingsPage ._3o7u, ._50f7, ._3ksl, ._3ks9, ._3ksw, ._42al, ._tph ._tpl, .CometSettingsPage #contentCol .fsm, .CometSettingsPage #contentCol .fbSettingsEditorFields a[role='button'], .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape, ._55pe, ._19s-, ._2fvv, ._2x1i, ._2x1j, ._2x1p, h5._34h5, ._1clg .inputtext:focus, ._1clg .inputtext:active, ._1yhk, h3._34h5, ._59cz ._59c_ h4, ._52id, ._3x93 .uiList li, ._575j a:hover {
+	#facebook ._8esf ._8e63, #facebook ._8esf ._58mk, ._c24, #facebook ._8esf ._52lp ._52lq, input, select, textarea, #facebook ._8esf ._5k_4 ._8esg, #facebook ._8esf ._5k_2 ._58mt, #facebook ._8it_ ._1v_x h2.uiHeaderTitle, .rs22bh7c, ._4-i0 ._52c9, ._15lg, #facebook ._8esj._8esf ._8eso, #facebook ._9kpl ._9kpo, .fcb, .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabels, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, ._42fu, .CometSettingsPage ._50f4, .CometSettingsPage ._39gj, .CometSettingsPage ._3o7u, ._50f7, ._3ksl, ._3ks9, ._3ksw, ._42al, ._tph ._tpl, .CometSettingsPage #contentCol .fsm, .CometSettingsPage #contentCol .fbSettingsEditorFields a[role='button'], .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape, ._55pe, ._19s-, ._2fvv, ._2x1i, ._2x1j, ._2x1p, h5._34h5, ._1clg .inputtext:focus, ._1clg .inputtext:active, ._1yhk, h3._34h5, ._59cz ._59c_ h4, ._52id, ._3x93 .uiList li, ._575j a:hover, .uiInputLabelLegacy label {
 		color: var(--primary-text);
 	}
 	.fzdkajry {
 		fill: var(--primary-text);
 	}
-	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz {
+	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz, #facebook ._9np_ ._9o4e, #facebook ._9np_ ._9o1w, #facebook ._9np_ ._9ok8 {
 		color: var(--secondary-text);
 	}
 	._1gbd {
@@ -107,20 +107,20 @@
 		background-color: var(--bg-2);
 		border-top-color: var(--border);
 	}
-	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e) {
+	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e):not(.l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.tdjehn4e.tv7at329), #facebook ._9np_ ._9nq1, ._9np_ ._9okt, ._9np_ ._9ok7 {
 		background-color: var(--bg-3);
 	}
 	.qhmrp3oz {
 		border-color: var(--bg-2);
 	}
-	._8esf ._58mg, #facebook ._8esf ._5k_4 ._8esg, ._5lnf, ._8it_ .uiInterstitial .interstitialHeader, .linmgsc8, .qbxu24ho, .l6v480f0, ._4-u2, ._4ks>li, .fbSettingsListBorderTop, .uiBoxGray, ._4-u2>._4-u3, ._a7w, ._39gk, ._3kso, ._tpp, .uiBoxWhite, .fbSettingsSections .fbSettingsSectionsItem.fbSettingsSectionsItemBorderTop, .d6zdudih, .fbSettingsSections, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2::before, ._2x1p, ._2g0n, ._b_1 {
+	._8esf ._58mg, #facebook ._8esf ._5k_4 ._8esg, ._5lnf, ._8it_ .uiInterstitial .interstitialHeader, .linmgsc8, .qbxu24ho, .l6v480f0, ._4-u2, ._4ks>li, .fbSettingsListBorderTop, .uiBoxGray, ._4-u2>._4-u3, ._a7w, ._39gk, ._3kso, ._tpp, .uiBoxWhite, .fbSettingsSections .fbSettingsSectionsItem.fbSettingsSectionsItemBorderTop, .d6zdudih, .fbSettingsSections, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2::before, ._2x1p, ._2g0n, ._b_1, .uiInterstitial .interstitialHeader, ._9np_ ._9okt {
 		border-color: var(--border);
 	}
-	._8esf ._5k_2 {
+	._8esf ._5k_2, .inputtext, .inputpassword {
 		background-color: var(--bg-3);
 		border-color: var(--border);
 	}
-	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a {
+	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a, .uiInterstitialBar .pts a, ._9np_ ._9okv, .medium_pass {
 		color: var(--accent);
 	}
 	#facebook ._8esf ._7-16 {
@@ -138,6 +138,9 @@
 	}
 	._8it_ ._8iu2 {
 		box-shadow: 0 0 4px rgba(255, 255, 255, .1), 0 0 1px rgba(255, 255, 255, .1);
+	}
+	._9np_ .uiBoxGray, #facebook ._9np_ .interstitialHeader, ._9aha ._9ok3 {
+		border-color: rgba(255,255,255,.1);
 	}
 	._8n2n {
 		background-color: var(--bg-3);
@@ -358,7 +361,17 @@
 		margin: 0;
 		padding: 0;
 	}
-	.tkxwya3v, .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
+	.uiBoxYellow {
+		background-color: #71672d;
+		border-color: #cab213;
+	}
+	.uiHeader h2 {
+		color: #e6efff;
+	}
+	._k1:hover {
+		background-color: transparent;
+	}
+	.tkxwya3v:not(.s1i5eluu.akjuzmll.bub6lnnc.i09qtzwb.lthxh50u.pmqtw6m8.pmk7jnqg.tkxwya3v.tt24zdws.ms05siws.flx89l3n.b7h9ocf4.jav28p83), .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
 		left: 0;
 		top: 0;
 		bottom: 0;
