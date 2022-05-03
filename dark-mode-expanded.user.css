@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name           Facebook - Dark Mode Expanded
 @namespace      github.com/blyad2137/facebook-dark-mode-expanded
-@version        1.0.1
+@version        1.0.2
 @description    `Expanded Dark Mode covers everything that still remains white and corrects some present issues on the site.`
 @author         blyad (https://github.com/blyad2137)
-@license	CC BY-NC-SA 4.0
+@license		CC BY-NC-SA 4.0
 @homepageURL    https://github.com/blyad2137/facebook-dark-mode-expanded
 @supportURL     https://github.com/blyad2137/facebook-dark-mode-expanded/issues
 @updateURL      https://userstyles.world/api/style/3903.user.css
@@ -42,8 +42,11 @@
 		--secondary-text: #b0b3b8;
 		--st: var(--secondary-text);
 		--border: #3e4042;
-		--accent: hsl(214, 100%, 59%);
+		--accent: hsl(207, 92%, 58%);
+		--link: var(--accent);
 		--accent-rgb: 46, 137, 255;
+		
+		--invert-1: invert(96%) sepia(0%) saturate(6922%) hue-rotate(255deg) brightness(95%) contrast(75%);
 	}
 	
 	body.UIPage_LoggedOut, body._605a {
@@ -53,16 +56,16 @@
 	#contentCurve, ._8icy ._8icz, ._5tkp, ._1hcb {
 		border-color: var(--border);
 	}
-	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext, ._585r {
+	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext, ._585r, .qsy8amke {
 		background-color: var(--bg-1);
 	}
-	#facebook ._8esf ._8e63, #facebook ._8esf ._58mk, ._c24, #facebook ._8esf ._52lp ._52lq, input, select, textarea, #facebook ._8esf ._5k_4 ._8esg, #facebook ._8esf ._5k_2 ._58mt, #facebook ._8it_ ._1v_x h2.uiHeaderTitle, .rs22bh7c, ._4-i0 ._52c9, ._15lg, #facebook ._8esj._8esf ._8eso, #facebook ._9kpl ._9kpo, .fcb, .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabels, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, ._42fu, .CometSettingsPage ._50f4, .CometSettingsPage ._39gj, .CometSettingsPage ._3o7u, ._50f7, ._3ksl, ._3ks9, ._3ksw, ._42al, ._tph ._tpl, .CometSettingsPage #contentCol .fsm, .CometSettingsPage #contentCol .fbSettingsEditorFields a[role='button'], .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape, ._55pe, ._19s-, ._2fvv, ._2x1i, ._2x1j, ._2x1p, h5._34h5, ._1clg .inputtext:focus, ._1clg .inputtext:active, ._1yhk, h3._34h5, ._59cz ._59c_ h4, ._52id, ._3x93 .uiList li, ._575j a:hover, .uiInputLabelLegacy label {
+	#facebook ._8esf ._8e63, #facebook ._8esf ._58mk, ._c24, #facebook ._8esf ._52lp ._52lq, input, select, textarea, #facebook ._8esf ._5k_4 ._8esg, #facebook ._8esf ._5k_2 ._58mt, #facebook ._8it_ ._1v_x h2.uiHeaderTitle, .rs22bh7c, ._4-i0 ._52c9, ._15lg, #facebook ._8esj._8esf ._8eso, #facebook ._9kpl ._9kpo, .fcb, .CometSettingsPage #contentCol .uiHeader h2.uiHeaderTitle, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabels, .CometSettingsPage #contentCol .fbSettingsList h3, .CometSettingsPage #contentCol .fbSettingsEditor .fbSettingsEditorLabel, ._42fu, .CometSettingsPage ._50f4, .CometSettingsPage ._39gj, .CometSettingsPage ._3o7u, ._50f7, ._3ksl, ._3ks9, ._3ksw, ._42al, ._tph ._tpl, .CometSettingsPage #contentCol .fsm, .CometSettingsPage #contentCol .fbSettingsEditorFields a[role='button'], .CometSettingsPage #contentCol h3, .fbSettingsList .fbSettingsListItemLabelWithSubtitle, .bq6qj4t2, .eitm9ape, ._55pe, ._19s-, ._2fvv, ._2x1i, ._2x1j, ._2x1p, h5._34h5, ._1clg .inputtext:focus, ._1clg .inputtext:active, ._1yhk, h3._34h5, ._59cz ._59c_ h4, ._52id, ._3x93 .uiList li, ._575j a:hover, .uiInputLabelLegacy label, ._2e9n, ._4-xi, ._5p3j, #facebook ._-kb h2, #facebook ._-kb h3, #facebook ._-kb h1 {
 		color: var(--primary-text);
 	}
 	.fzdkajry {
 		fill: var(--primary-text);
 	}
-	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz, #facebook ._9np_ ._9o4e, #facebook ._9np_ ._9o1w, #facebook ._9np_ ._9ok8 {
+	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz, #facebook ._9np_ ._9o4e, #facebook ._9np_ ._9o1w, #facebook ._9np_ ._9ok8, ._erp label, ._yl9 {
 		color: var(--secondary-text);
 	}
 	._1gbd {
@@ -91,7 +94,7 @@
 	.sp_gMujFo71RwJ.sx_25f620, [src*="/__geKiQnSG-.png"], .sp_98fCI7IVTTz.sx_c4643a,  [src*="/Family-Lockup-Inline_10_light.png"], .sp_-Ww9-2lZPiS.sx_3813d1, .sp_d_7d9pz5g6w, ._8bb_ img.monochrome, ._8bb_ i.monochrome, .sp_8s3dp67SKVi.sx_9e9cb0:not(.selected .sp_8s3dp67SKVi.sx_9e9cb0) {
 		filter: invert(1) hue-rotate(180deg);
 	}
-._9ls8, ._9ls9, .lzf7d6o1, [src*="/leave-door_filled_24_fds-black.png"], [src*="/language_filled_24_fds-black.png"], [src*="/settings_outline_24_fds-gray-40.png"], [src*="/shopping-bag_outline_24_fds-gray-40.png"], [src*="/shield_outline_24_fds-gray-40.png"],  .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(3) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6, .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(5) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6, [src*="/r/IqRReGL9Pcc.png"], [src*="/r/4-HVPI8rmSn.png"], [src*="/r/K4ydGT2S5Bv.png"], [src*="/r/1EMLaPDMxuu.png"]  {
+._9ls8, ._9ls9, .lzf7d6o1, [src*="/leave-door_filled_24_fds-black.png"], [src*="/language_filled_24_fds-black.png"], [src*="/settings_outline_24_fds-gray-40.png"], [src*="/shopping-bag_outline_24_fds-gray-40.png"], [src*="/shield_outline_24_fds-gray-40.png"],  .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(3) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6:not(.rq0escxv.du4w35lb.ms05siws.pnx7fd3z.b7h9ocf4.pmk7jnqg.j9ispegn.kr520xx4.pedkr2u6.oqq733wu .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(3) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6), .dwxx2s2f.dicw6rsg.kady6ibp.rs0gx3tq:nth-of-type(5) .bp9cbjyn.j83agx80.taijpn5t.l9j0dhe7.datstx6m.k4urcfbm i.hu5pjgll.bixrwtb6, [src*="/r/IqRReGL9Pcc.png"], [src*="/r/4-HVPI8rmSn.png"], [src*="/r/K4ydGT2S5Bv.png"], [src*="/r/1EMLaPDMxuu.png"]  {
 		filter: invert(1);
 	}
 	._9lsa:hover, .rnr61an3 {
@@ -100,28 +103,31 @@
 	._8fgk._8idq ._3ixn, ._8n26._8n26 ._3ixn {
 		background-color: rgba(var(--bg-1-rgb),.8);
 	}
-	._8fgk ._8ien ._52lp, ._9bpz ._8ien ._52lp, ._58mf .uiStickyPlaceholderInput, ._4t2a, ._59s7, div._4-i2, div._5a8u, .cddn0xzi, .uiBoxWhite, ._9l2i ._9l1d ._9l16, ._9l2i ._9l16, .hybvsw6c, ._9ai5, ._4-u8, ._39il ._82go, .q2y6ezfg, .fbSettingsList a.fbSettingsListLink:hover, ._57d8, ._2z5s:hover, ._599r, .mzpmh2ah:hover, ._4h7j, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2, ._8fgk ._52lp, ._9bpz ._52lp, ._97vz ._1w1t, ._2ypw._3hyz ._2ypv, ._5tkn {
+	._8fgk ._8ien ._52lp, ._9bpz ._8ien ._52lp, ._58mf .uiStickyPlaceholderInput, ._4t2a, ._59s7, div._4-i2, div._5a8u, .cddn0xzi, .uiBoxWhite, ._9l2i ._9l1d ._9l16, ._9l2i ._9l16, .hybvsw6c, ._9ai5, ._4-u8, ._39il ._82go, .q2y6ezfg, .fbSettingsList a.fbSettingsListLink:hover, ._57d8, ._2z5s:hover, ._599r, .mzpmh2ah:hover, ._4h7j, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2, ._8fgk ._52lp, ._9bpz ._52lp, ._97vz ._1w1t, ._2ypw._3hyz ._2ypv, ._5tkn, ._4-u2._5x_7._p0k._5x_9._4-u8, ._erp {
 		background-color: var(--bg-2);
 	}
 	._8fgk ._8fgl, ._9bpz ._8fgl {
 		background-color: var(--bg-2);
 		border-top-color: var(--border);
 	}
-	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e):not(.l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.tdjehn4e.tv7at329), #facebook ._9np_ ._9nq1, ._9np_ ._9okt, ._9np_ ._9ok7 {
+	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e):not(.l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.tdjehn4e.tv7at329), #facebook ._9np_ ._9nq1, ._9np_ ._9okt, ._9np_ ._9ok7, .mu51a5us.j1l0snac.h9pa7xm5.sbevj9st.cwj9ozl2.ql22ph3y.llvz9h1a.cqhxmwf1.eq5eb3yx.eqgx27jh.j83agx80.ae35evdt.fdg1wqfs.mrt03zmi.g0qnabr5 {
 		background-color: var(--bg-3);
 	}
 	.qhmrp3oz {
 		border-color: var(--bg-2);
 	}
-	._8esf ._58mg, #facebook ._8esf ._5k_4 ._8esg, ._5lnf, ._8it_ .uiInterstitial .interstitialHeader, .linmgsc8, .qbxu24ho, .l6v480f0, ._4-u2, ._4ks>li, .fbSettingsListBorderTop, .uiBoxGray, ._4-u2>._4-u3, ._a7w, ._39gk, ._3kso, ._tpp, .uiBoxWhite, .fbSettingsSections .fbSettingsSectionsItem.fbSettingsSectionsItemBorderTop, .d6zdudih, .fbSettingsSections, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2::before, ._2x1p, ._2g0n, ._b_1, .uiInterstitial .interstitialHeader, ._9np_ ._9okt {
+	._8esf ._58mg, #facebook ._8esf ._5k_4 ._8esg, ._5lnf, ._8it_ .uiInterstitial .interstitialHeader, .linmgsc8, .qbxu24ho, .l6v480f0, ._4-u2, ._4ks>li, .fbSettingsListBorderTop, .uiBoxGray, ._4-u2>._4-u3, ._a7w, ._39gk, ._3kso, ._tpp, .uiBoxWhite, .fbSettingsSections .fbSettingsSectionsItem.fbSettingsSectionsItemBorderTop, .d6zdudih, .fbSettingsSections, ._3o_h::after, ._2yaa ._2yau::after, ._2yq ._4-u2::before, ._2x1p, ._2g0n, ._b_1, .uiInterstitial .interstitialHeader, ._9np_ ._9okt, ._5x_7, ._2e9n, ._4-xi, ._p0k ._5hzs {
 		border-color: var(--border);
+	}
+	._5x_7 {
+		border-color: var(--border) !important;
 	}
 	._8esf ._5k_2, .inputtext, .inputpassword {
 		background-color: var(--bg-3);
 		border-color: var(--border);
 	}
-	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a, .uiInterstitialBar .pts a, ._9np_ ._9okv, .medium_pass {
-		color: var(--accent);
+	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a, .uiInterstitialBar .pts a, ._9np_ ._9okv, .medium_pass, [class="mbl pvl _4-dr fsm fwn fcg"] a, ._erp a {
+		color: var(--link);
 	}
 	#facebook ._8esf ._7-16 {
 		color: var(--primary-text);
@@ -157,7 +163,7 @@
 	.nwpbqux9:not(.cwj9ozl2) {
 		box-shadow: 0 12px 28px 0 var(--shadow-2),0 2px 4px 0 var(--shadow-1),inset 0 0 0 1px var(--border);
 	}
-	.oo9gr5id, .a57itxjd {
+	.oo9gr5id, .a57itxjd, .fv0vnmcu.ggphbty4.oeo4gz9l.chsygg5i.q2y6ezfg.pdihbav5.fo8ltl2p.b8f6b1oh.q0b78ich.j83agx80.taijpn5t.bp9cbjyn.lquwwe9x.e9vueds3.lrazzd5p.abiwlrkh.l9j0dhe7 {
 		color: var(--pt);
 	}
 	.m9osqain, ._3h8t, ._575j::before, ._575j a, body.UIPage_LoggedOut #pageFooter a {
@@ -181,7 +187,7 @@
 		background-color: var(--border);
 	}
 	.ms7hmo2b {
-		background-color: rgba(var(--bg-3-rgb),.8);
+		background-color: rgba(11,11,11,.8);
 		backdrop-filter: blur(.15rem);
 		-webkit-backdrop-filter: blur(.15rem);
 	}
@@ -371,7 +377,18 @@
 	._k1:hover {
 		background-color: transparent;
 	}
-	.tkxwya3v:not(.s1i5eluu.akjuzmll.bub6lnnc.i09qtzwb.lthxh50u.pmqtw6m8.pmk7jnqg.tkxwya3v.tt24zdws.ms05siws.flx89l3n.b7h9ocf4.jav28p83), .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
+	._yl8 {
+		background-color: var(--bg-2);
+		border-color: var(--bg-1);
+	}
+	._yl4 ._yl7 .beeperNub {
+		filter: var(--invert-1);
+	}
+	._err input, ._ers input {
+		border-color: var(--border);
+		border-radius: .235rem;
+	}
+	.tkxwya3v:not(.s1i5eluu.akjuzmll.bub6lnnc.i09qtzwb.lthxh50u.pmqtw6m8.pmk7jnqg.tkxwya3v.tt24zdws.ms05siws.flx89l3n.b7h9ocf4.jav28p83):not(.rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.f0ai4nzy.flx89l3n.b4alr923.jnigpg78.odw8uiq3):not(.rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.flx89l3n.jnigpg78.odw8uiq3.s00z5mgp.eloblzlw.kwf64sci), .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
 		left: 0;
 		top: 0;
 		bottom: 0;
@@ -382,6 +399,20 @@
 		border-radius: 50%;
 		width: .7rem;
 		height: .7rem;
+	}
+
+	.du4w35lb.lzcic4wl.pwoa4pd7.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.q9uorilb.pedkr2u6.ni8dbmo4.stjgntxs.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.f0ai4nzy.art1omkt.b4alr923.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.rgmg9uty.eim337gk.kvgmc6g5.cxmmr5t8.enqfppq2.hcukyx3x {
+		background-color: rgba(255,255,255,.25);
+	}
+	.q2y6ezfg.dwerhba3.kgjeooe1.kxcb68kb.mwvzfrdb.q9uorilb.mw227v9j.roh60bw9.hop8lmos.pmk7jnqg.loos5mxf {
+		background-color: var(--pt);
+	}
+	a.oajrlxb2.gs1a9yip.g5ia77u1.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.n00je7tq.arfg74bv.qs9ysxi8.k77z8yql.btwxx1t3.abiwlrkh.p8dawk7l.q9uorilb.lzcic4wl.k4urcfbm .rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.d2edcug0.d8ncny3e.buofh1pr.g5gj957u.tgvbjcpo {
+		padding-top: .7rem;
+	}
+	a.oajrlxb2.gs1a9yip.g5ia77u1.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.n00je7tq.arfg74bv.qs9ysxi8.k77z8yql.btwxx1t3.abiwlrkh.p8dawk7l.q9uorilb.lzcic4wl.k4urcfbm .gs1a9yip.ow4ym5g4.auili1gw.rq0escxv.j83agx80.cbu4d94t.buofh1pr.g5gj957u.i1fnvgqd.oygrvhab.cxmmr5t8.hcukyx3x.kvgmc6g5.tgvbjcpo.hpfvmrgz.rz4wbd8a.a8nywdso.l9j0dhe7.du4w35lb.rj1gh0hx.cxgpxx05.sj5x9vvc {
+		padding-top: 1.6rem;
+		position: absolute;
 	}
 	
 	
