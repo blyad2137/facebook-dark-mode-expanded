@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Facebook - Dark Mode Expanded
 @namespace      github.com/blyad2137/facebook-dark-mode-expanded
-@version        1.0.2
+@version        1.0.3
 @description    `Expanded Dark Mode covers everything that still remains white and corrects some present issues on the site.`
 @author         blyad (https://github.com/blyad2137)
 @license		CC BY-NC-SA 4.0
@@ -27,6 +27,10 @@
 	}EOT;
 	2. "To the center(OG)" <<<EOT EOT;
 }
+@advanced dropdown disable-known-people "No, I Do Not Know These People, now fuck off" {
+	1. "ON" <<<EOT .rq0escxv.l9j0dhe7.du4w35lb.pfnyh3mw.gs1a9yip.j83agx80.btwxx1t3.lhclo0ds.taijpn5t.sv5sfqaa.o22cckgh.obtkqiv7.fop5sh7t .rq0escxv.l9j0dhe7.du4w35lb.hpfvmrgz.buofh1pr.g5gj957u.aov4n071.oi9244e8.bi6gxh9e.h676nmdw.aghb5jc5.d8ncny3e.d2edcug0 .rq0escxv.l9j0dhe7.du4w35lb.hybvsw6c.io0zqebd.m5lcvass.fbipl8qg.nwvqtn77.k4urcfbm.ni8dbmo4.stjgntxs.sbcfpzgs[style] { display: none !important; } EOT;
+	2. "OFF" <<<EOT EOT;
+}
 ==/UserStyle== */
 
 @-moz-document domain("facebook.com") {
@@ -37,6 +41,8 @@
 		--bg-2-rgb: 36, 37, 38;
 		--bg-3: #3a3b3c;
 		--bg-3-rgb: 58, 59, 60;
+		--bg-4: rgba(11,11,11,.8);
+		--bg-4-rgb: 11,11,11,.8;
 		--primary-text: #e4e6eb;
 		--pt: var(--primary-text);
 		--secondary-text: #b0b3b8;
@@ -46,6 +52,7 @@
 		--link: var(--accent);
 		--accent-rgb: 46, 137, 255;
 		
+		--white-rgb: 255,255,255;
 		--invert-1: invert(96%) sepia(0%) saturate(6922%) hue-rotate(255deg) brightness(95%) contrast(75%);
 	}
 	
@@ -53,7 +60,7 @@
 		background-color: var(--bg-1);
 		color: var(--primary-text);
 	}
-	#contentCurve, ._8icy ._8icz, ._5tkp, ._1hcb {
+	#contentCurve, ._8icy ._8icz, ._5tkp, ._1hcb, ._9ai8 {
 		border-color: var(--border);
 	}
 	._95k9, ._1gax, ._4-u5, ._6s5d, ._8esf.gradient, ._97vt ._30ny, #contentCol, .uiBoxGray, ._4p8x, .lnqo2vjd, ._cue, ._1pig, .registration ._li._9bpz, ._9bq8, ._4mkt, ._1clg .inputtext, ._585r, .qsy8amke {
@@ -65,7 +72,7 @@
 	.fzdkajry {
 		fill: var(--primary-text);
 	}
-	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz, #facebook ._9np_ ._9o4e, #facebook ._9np_ ._9o1w, #facebook ._9np_ ._9ok8, ._erp label, ._yl9 {
+	#facebook ._8esf ._8e4l, #pageFooter, ._95ke #pageFooterChildren a, ._95ke .localeSelectorList a, #facebook ._8esf ._52lp ._52lr, #facebook ._8esf ._2_68, ._58mu ._58mv, ._83kf, #facebook ._8it_ ._1v_-, #facebook ._8n2m ._8n25, ._rzy, #facebook ._9kpl ._9kq2, .fcg, ._9ax- ._1rf8, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemContent, .CometSettingsPage #contentCol label, ._3sts, ._4p8z, ._50f8, ._33gq ._38my, ._5dwb ._38my, ._3ksa, ._2iex, .fbSettingsList .fbSettingsListItemSubtitle, .l6yax632, .CometSettingsPage .fbSettingsSectionsItemContent, .gufbqysq, ._54nc ._48u1, ._2x1k, ._5s9z, ._5s9z a, ._2vmy img, ._1clg .inputtext, ._1tvz, #facebook ._9np_ ._9o4e, #facebook ._9np_ ._9o1w, #facebook ._9np_ ._9ok8, ._erp label, ._yl9, ._3uxxj--container, #facebook ._9aha ._9ai4 {
 		color: var(--secondary-text);
 	}
 	._1gbd {
@@ -110,7 +117,7 @@
 		background-color: var(--bg-2);
 		border-top-color: var(--border);
 	}
-	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e):not(.l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.tdjehn4e.tv7at329), #facebook ._9np_ ._9nq1, ._9np_ ._9okt, ._9np_ ._9ok7, .mu51a5us.j1l0snac.h9pa7xm5.sbevj9st.cwj9ozl2.ql22ph3y.llvz9h1a.cqhxmwf1.eq5eb3yx.eqgx27jh.j83agx80.ae35evdt.fdg1wqfs.mrt03zmi.g0qnabr5 {
+	._8fgk ._58mf ._58mg, ._8fgk ._58mf .uiStickyPlaceholderInput .placeholder, #facebook ._8esf ._5k_4 ._8esg, .tdjehn4e:not(.bp9cbjyn), .b3i9ofy5, ._9ai5:hover, ._517h:hover, .tdjehn4e:not(.bp9cbjyn.jk6sbkaj.kdgqqoy6.ihh4hy1g.qttc61fc.pq6dq46d.jnigpg78.ph5uu5jm.b3onmgus.tdjehn4e):not(.l9j0dhe7.du4w35lb.j83agx80.pfnyh3mw.taijpn5t.bp9cbjyn.owycx6da.btwxx1t3.kt9q3ron.ak7q8e6j.isp2s0ed.ri5dt5u2.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.d1544ag0.tw6a2znq.tdjehn4e.tv7at329), #facebook ._9np_ ._9nq1, ._9np_ ._9okt, ._9np_ ._9ok7, .oajrlxb2.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.nhd2j8a9.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.i1ao9s8h.esuyzwwr.f1sip0of.abiwlrkh.p8dawk7l.lzcic4wl.bp9cbjyn.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.j83agx80.taijpn5t.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.qypqp5cg.q676j6op.oo1teu6h, ._9ai7:hover ._9ai8 {
 		background-color: var(--bg-3);
 	}
 	.qhmrp3oz {
@@ -126,7 +133,7 @@
 		background-color: var(--bg-3);
 		border-color: var(--border);
 	}
-	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a, .uiInterstitialBar .pts a, ._9np_ ._9okv, .medium_pass, [class="mbl pvl _4-dr fsm fwn fcg"] a, ._erp a {
+	._8esf ._58mu ._58mv a, ._8icy ._6ltj a, ._58mo a, ._58mh a, #pageFooter a, .py34i1dx, ._15lf, a._39g9, ._97w2 ._97w4, ._97w2 ._97w5, ._97w2 #not_me_link, ._9ay1 ._9ay2 a, ._9ay1 ._9ay3 a, .CometSettingsPage #contentCol .fbSettingsEditorFields a, .CometSettingsPage #contentCol .fbSettingsList .fbSettingsListItemEdit, .CometSettingsPage ._2gee, ._ohf a span, .emitnudj, #facebook ._8esf ._9bq4 ._9bq5, ._4o-z, ._34h5, ._34h5 ._34h4, ._3-lc._28ji, ._28jh._28ji, ._34h4, ._17ky a, .uiInterstitialBar .pts a, ._9np_ ._9okv, .medium_pass, [class="mbl pvl _4-dr fsm fwn fcg"] a, ._erp a, .fcg a, .__tw .jewelFooter a:hover, .__tw .jewelFooter a:active, .__tw .jewelFooter a:focus, .jewelFooter a, .i989jk13, #facebook ._9aha ._9ai2 {
 		color: var(--link);
 	}
 	#facebook ._8esf ._7-16 {
@@ -349,14 +356,22 @@
 	.rq0escxv.du4w35lb.rek2kq2y.lpgh02oy {
 		top: 55px !important;
 	}
-	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw {
+	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw:not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.a2qmuk9k.i7icyguk.iywaf9al.crqf1j52.rgmg9uty.b73ngqbp):not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.m691oh2y.imqsbaly.hgvv2z0u.k9ylphf9.rgmg9uty.b73ngqbp):not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.ttqsi1f1.c1zbco1n.etxk209a.qr17m6m6.rgmg9uty.b73ngqbp) {
 		position: relative;
 		border-radius: 50%;
-		width: 1rem;
-		height: 1rem;
+		width: 17px;
+		height: 16px;
 		border: 2px solid var(--primary-icon);
 		margin: 0;
 		padding: 0;
+		top: 0;
+		left: 0;
+	}
+	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw:not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.a2qmuk9k.i7icyguk.iywaf9al.crqf1j52.rgmg9uty.b73ngqbp):not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.m691oh2y.imqsbaly.hgvv2z0u.k9ylphf9.rgmg9uty.b73ngqbp):not(.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.ttqsi1f1.c1zbco1n.etxk209a.qr17m6m6.rgmg9uty.b73ngqbp) > span.a7t8en6y.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
+		top: 1px;
+		left: 1px;
+		width: 10px;
+		height: 10px;
 	}
 	.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rq0escxv.q9uorilb.pfnyh3mw.l9j0dhe7.iv6tldhd {
 		position: relative;
@@ -381,31 +396,70 @@
 		background-color: var(--bg-2);
 		border-color: var(--bg-1);
 	}
-	._yl4 ._yl7 .beeperNub {
+	._yl4 ._yl7 .beeperNub, .__tw .beeperNub {
 		filter: var(--invert-1);
 	}
 	._err input, ._ers input {
 		border-color: var(--border);
 		border-radius: .235rem;
 	}
-	.tkxwya3v:not(.s1i5eluu.akjuzmll.bub6lnnc.i09qtzwb.lthxh50u.pmqtw6m8.pmk7jnqg.tkxwya3v.tt24zdws.ms05siws.flx89l3n.b7h9ocf4.jav28p83):not(.rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.f0ai4nzy.flx89l3n.b4alr923.jnigpg78.odw8uiq3):not(.rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.flx89l3n.jnigpg78.odw8uiq3.s00z5mgp.eloblzlw.kwf64sci), .is6700om.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.pmk7jnqg.fwizqjfa.sgaxgfmg.tmxdrx1h {
-		left: 0;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		position: absolute;
-		margin: auto;
-		padding: 0;
-		border-radius: 50%;
-		width: .7rem;
-		height: .7rem;
+	._3uxxj--container {
+		transition: all var(--fds-animation-fade-out) 90ms;
 	}
+	._3uxxj--container:hover {
+		background-color: var(--hover-overlay);
+	}
+	._45kb>div {
+		border-color: rgba(var(--white-rgb),.1);
+	}
+	._7gxn._7gxn #profile_tab_jewel ._2ftp ._2ftq, ._7gxn._7gxn #composer_jewel ._2ftp ._2ftq, ._36bl ._2ti7 .img, i.hu5pjgll.m6k467ps, ._h2p ._3nzl .jewelButton ._2n_9, ._h2p ._3nzl .jewelButton:hover ._2n_9, ._h2p ._3nzl .jewelButton:focus ._2n_9, ._h2p ._4d1i ._59fb, ._h2p ._4d1i ._59fc:hover ._59fb, ._h2p ._4d1i ._59fc:focus ._59fb, ._h2p ._5lxt, ._h2p ._5lxs:hover ._5lxt, ._h2p ._5lxs:focus ._5lxt, ._h2p ._6qfu, ._h2p ._5lxs:hover ._6qfu, ._h2p ._5lxs:focus ._6qfu {
+		filter: invert(1);
+	}
+	._2rgt[style*="background-color:#C9CCD1"] {
+		background-color: var(--border) !important;
+	}
+    ._3sod, ._3sod:hover, .__tw div.jewelHeader, .__tw, ._fyy, ._33c, .__tw .jewelFooter a {
+        background-color: var(--bg-2);
+		border-color: var(--border);
+    }
+	.__tw li.jewelItemNew, .jewelItemNew ._33e {
+		background-color: var(--bg-3);
+	}
+	._3soi, ._3soi:hover, .__tw, ._33e {
+		color: var(--pt);
+	}
+	._3som, ._33g, ._fyy {
+		color: var(--st);
+	}
+	.uiScrollableAreaGripper {
+		background-color: rgba(255, 255, 255, .4);
+		border-color: rgba(170, 170, 170, .6);
+	}
+	._33c:hover ._33e, ._33c ._33e:focus {
+		background-image: linear-gradient(hsla(223, 15%, 91%, .04), hsla(223, 15%, 91%, .04));
+	}
+	.contentAfter .uiScrollableAreaTrack:hover, .contentBefore .uiScrollableAreaTrack:hover, .contentAfter.uiScrollableAreaTrackOver .uiScrollableAreaTrack, .contentBefore.uiScrollableAreaTrackOver .uiScrollableAreaTrack, .uiScrollableAreaDragging .uiScrollableAreaTrack {
+		background-color: rgba(255, 255, 255, .15);
+	}
+	.nwpbqux9 {
+		box-shadow: 0 12px 28px 0 var(--shadow-2),0 2px 4px 0 var(--shadow-1),inset 0 0 0 1px rgba(var(--bg-3-rgb),.5);
+	}
+	#facebook ._9nyi, ._8icy._9ahz ._6lux ._6luy:focus, ._9aha ._6lux ._6luy:focus {
+		border-color: var(--accent);
+		box-shadow: 0 0 0 2px var(--bg-3);
+		caret-color:  var(--accent);
+	}
+	
+	
 
 	.du4w35lb.lzcic4wl.pwoa4pd7.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.q9uorilb.pedkr2u6.ni8dbmo4.stjgntxs.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.f0ai4nzy.art1omkt.b4alr923.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.rgmg9uty.eim337gk.kvgmc6g5.cxmmr5t8.enqfppq2.hcukyx3x {
 		background-color: rgba(255,255,255,.25);
 	}
-	.q2y6ezfg.dwerhba3.kgjeooe1.kxcb68kb.mwvzfrdb.q9uorilb.mw227v9j.roh60bw9.hop8lmos.pmk7jnqg.loos5mxf {
+	.q2y6ezfg.dwerhba3.kgjeooe1.kxcb68kb.mwvzfrdb.q9uorilb.mw227v9j.roh60bw9.hop8lmos.pmk7jnqg.loos5mxf, .rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.f0ai4nzy.flx89l3n.b4alr923.jnigpg78.odw8uiq3, .rq0escxv.du4w35lb.q2y6ezfg.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.n8kut6i8.hzruof5a.pmk7jnqg.tkxwya3v.bk00n993.flx89l3n.jnigpg78.odw8uiq3.s00z5mgp.eloblzlw.kwf64sci {
 		background-color: var(--pt);
+	}
+.du4w35lb.lzcic4wl.pwoa4pd7.rq0escxv.q9uorilb.pedkr2u6.ni8dbmo4.stjgntxs.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.f0ai4nzy.art1omkt.b4alr923.rpcrwfug.lit7pgxp.o3c63hce.hqlzco19.lsl2245n.rgmg9uty.eim337gk.kvgmc6g5.cxmmr5t8.enqfppq2.hcukyx3x, .mu51a5us.j1l0snac.h9pa7xm5.sbevj9st.cwj9ozl2.ql22ph3y.llvz9h1a.cqhxmwf1.eq5eb3yx.eqgx27jh.j83agx80.ae35evdt.fdg1wqfs.mrt03zmi.g0qnabr5 {
+		background-color: var(--bg-4);
 	}
 	a.oajrlxb2.gs1a9yip.g5ia77u1.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.n00je7tq.arfg74bv.qs9ysxi8.k77z8yql.btwxx1t3.abiwlrkh.p8dawk7l.q9uorilb.lzcic4wl.k4urcfbm .rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.d2edcug0.d8ncny3e.buofh1pr.g5gj957u.tgvbjcpo {
 		padding-top: .7rem;
